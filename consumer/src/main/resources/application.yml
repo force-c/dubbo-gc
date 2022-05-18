@@ -1,0 +1,12 @@
+server:
+  port: 9103
+dubbo:
+  application:
+    name: consumer
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    protocol: zookeeper
+    address: 192.168.0.111:2181
+    timeout: 20000

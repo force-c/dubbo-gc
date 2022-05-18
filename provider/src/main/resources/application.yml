@@ -1,0 +1,16 @@
+server:
+  port: 9140
+dubbo:
+  application:
+    name: provider
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    protocol: zookeeper
+    address: 192.168.0.111:2181
+    timeout: 20000
+  scan:
+    base-packages:
+      - org.gc.provider
+      - service
